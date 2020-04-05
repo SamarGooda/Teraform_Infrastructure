@@ -1,0 +1,9 @@
+
+node {
+   def mvnHome
+ 
+   stage('Results') {
+       sh'terraform init'
+       sh'terraform apply'
+   }
+}
